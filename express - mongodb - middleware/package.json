@@ -1,0 +1,22 @@
+{
+  "name": "clase5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon.cmd server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@arteysoft/asyncforloop": "^1.0.0",
+    "express": "^4.17.1",
+    "faker": "^5.5.3",
+    "mongodb": "^4.1.2",
+    "nodemon": "^2.0.13",
+    "underscore": "^1.13.1",
+    "uuid": "^8.3.2"
+  }
+}
