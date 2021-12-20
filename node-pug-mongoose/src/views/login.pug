@@ -1,0 +1,22 @@
+extends layout.pug
+block content
+    nav 
+        p Don't have an account? 
+            a(href='http://localhost:3000/singup') Sing Up
+
+    if signinMessage.length > 0 
+        h3(class='msg-wr') #{signinMessage}
+
+    div(class="body")
+        div(class="login")
+            form(action="/login", method="post")
+                h3 Sign in to your account
+                div 
+                    h4 Email Address
+                    input(type="text" name="email" required)
+                div
+                    h4 Password
+                    input(type="password" name="password" required)
+                br
+                a(href='http://localhost:3000/singup')
+                    button(class=['btn-singin']) Sing In
